@@ -1,0 +1,56 @@
+.image-full {
+    display: none;
+    width: 100%;
+}
+
+.photo-source:hover .image-full {
+    display: block;
+}
+
+.photo-source:hover .image-mini {
+    display: none;
+}
+
+.row-nav {
+    margin-bottom: 1em;
+}
+
+.image-box {
+    text-align: center;
+    position: relative;
+    padding: 4px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
+}
+
+.image-box:hover .action {
+    display: block;
+}
+
+.action {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background: #337ab7;
+    background: rgba(51, 122, 183, 0.6);
+    font-weight: bold;
+    color: #ffffff;
+    text-align: right;
+    margin: 4px;
+}
+
+.action span, .caption span {
+    float: left;
+}
+
+.caption span {
+    padding: 6px 12px;
+}

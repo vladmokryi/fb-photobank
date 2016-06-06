@@ -1,0 +1,26 @@
+<section ng-init="init(); activity();">
+    <a href="/#!/albums"><h1>Albums</h1></a>
+    <div class="row row-nav">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <a class="btn btn-primary" href="/#!/activity">Activity</a>
+            <a class="btn btn-default" href="/logout">Logout</a>
+        </div>
+    </div>
+    <div class="row">
+        <div data-ng-repeat="album in albums track by $index" class="col-sm-6 col-md-4">
+            <div class="thumbnail text-center">
+                <div class="caption">
+                    <h3>{{album.name}}</h3>
+                </div>
+                <i class="fa fa-picture-o fa-5x"></i>
+                <div class="caption text-right">
+                    <span>{{album.created_time | date }}</span>
+                    <a ng-href="#!/albums/{{album.id}}/photos" class="btn btn-primary" role="button">View</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12" ng-if="!albums.length">
+            <span>Not found</span>
+        </div>
+    </div>
+</section>

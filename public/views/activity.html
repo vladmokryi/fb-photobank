@@ -1,0 +1,19 @@
+<section ng-init="init()">
+    <a href="/#!/albums"><h1>Activities</h1></a>
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <ul class="list-group">
+                <li class="list-group-item" data-ng-repeat="activity in activities track by $index">
+                    <span class="label"
+                          ng-class="{'label-success': activity.event === 'photos', 'label-info': activity.event === 'albums'}">{{activity.created_at | date}}</span>
+                    <i class="fa"
+                       ng-class="{'fa-camera': activity.event === 'photos', 'fa-picture-o': activity.event === 'albums'}"></i>
+                    View {{activity.event}}
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12" ng-if="!activities.length">
+            <span>Not found</span>
+        </div>
+    </div>
+</section>
