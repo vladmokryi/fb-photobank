@@ -1,7 +1,6 @@
 # FB Photobank
 
-https://codeship.com/projects/82d57210-0e1a-0134-fbc1-1a3a57c424fc/status?branch=master
-[ ![Codeship Status for msp4/shopper](https://www.codeship.io/projects/82d57210-0e1a-0134-fbc1-1a3a57c424fc/status)]
+![Codeship Status for msp4/shopper](https://www.codeship.io/projects/82d57210-0e1a-0134-fbc1-1a3a57c424fc/status)
 
 ## Instructions
 
